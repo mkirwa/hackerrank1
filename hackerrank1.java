@@ -113,3 +113,24 @@ public class Solution {
        
    }
 }
+
+///constructor example
+
+
+class person
+{
+
+  String name;
+  int age;
+  String address;
+
+  //parametized constructors
+      class person(int initalage)
+      {
+
+        String name;
+      }
+
+}
+
+
