@@ -217,6 +217,45 @@ public class Solution {
     }
 }
 
+///practise printing even and odd numbers in an array
+
+
+import java.util.*;
+public class example1 {
+  
+  public static void main(String[]args)
+  {
+    
+    int [] firstword=new int []{1,2,3,4,5,6};
+
+        
+        for(int i=0;i<firstword.length;i++)
+        {
+          
+            
+            if(i%2==0)
+                {
+            
+              System.out.print("this is an odd number ");
+
+                System.out.println(firstword[i]);
+                }
+            else 
+            {
+              System.out.print("this is an even number ");
+              System.out.println(firstword[i]);
+            }
+            
+        }
+        
+    
+    
+  }
+
+  
+
+}
+
 
 
 
