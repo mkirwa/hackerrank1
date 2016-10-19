@@ -291,6 +291,42 @@ public class Solution {
     }
 }
 
+<<<<<<< HEAD
+///hacker rank Day 6 option 2
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int testCases = scan.nextInt();
+        scan.nextLine();
+        
+        for(int i = 0; i < testCases; i++) {
+            String input = scan.nextLine();
+            
+            for(int j = 0; j < input.length(); j = j+2) {
+                System.out.print(input.charAt(j));
+            }
+            System.out.print(" ");
+            for(int j = 1; j < input.length(); j = j+2) {
+               System.out.print(input.charAt(j));
+            }
+            System.out.println();
+        }
+
+        
+        
+    }
+}
+
+=======
+>>>>>>> 4c957ee420c7e31c34aa689102e6ff6f65b35930
 
 
 
