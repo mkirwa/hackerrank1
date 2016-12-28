@@ -447,7 +447,80 @@ public class DictionaryPractise
 
       
 
+      //Recursions examples
+      //Finding summations
+      //Example summation of 5 = 5+4+3+2+1
 
+      public static int Summation(int n)
+      {
+
+        //base case
+
+        if(n<=0)
+        {
+          return 0;
+        }
+
+        //recursive case
+        else
+        {
+          //3 + summation(2)
+          //3 + 2 + summation(1)
+          //3 + 2 + 1 + summation(0)
+          //return 6
+          return n + Summation(n-1);
+        }
+
+
+      }
+
+      public static void main(String[]args)
+
+      {
+
+          Summation(3);
+
+      }
+
+
+
+
+      //hackerrank Day 9 Solution
+
+      public static void main(String[] args) {
+    // TODO Auto-generated method stub
+
+    //Write a factorial function that takes a positive integer,N
+    //as a parameter and prints the result of N ( N factorial).
+    System.out.print(factorial(5));
+    
+    
+  }
+  
+  public static int factorial(int n)
+  {
+    
+  
+  //base case
+  if(n<=1)
+  {
+    return 1;
+  }
+  
+  else
+  {
+    
+  //recursive case
+    
+  return n * factorial(n-1);
+    
+  }
+  
+  
+  
+}
+
+}
 
 
 
