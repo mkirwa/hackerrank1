@@ -483,6 +483,45 @@ public class DictionaryPractise
       }
 
 
+      //exponentiation example
+
+      public static int exponentiation(int n, int p)
+
+      {
+
+      //base case
+      if(p<=0)
+      {
+        return 1;
+      }
+
+      //recursive case
+
+      else
+      {
+
+        //5 * exponential(5,2)
+        //5 * 5 * exponential(5,1)
+        //5 * 5 * 5 exponentiation(5,0)
+        //5 * 5 * 5 * 1
+
+        return 5 * exponentiation(n, p-1);
+
+      }
+
+      }
+
+      public static void main(String[]args)
+
+      {
+
+
+        exponentiation(5,3);
+
+
+      }
+
+
 
 
       //hackerrank Day 9 Solution
@@ -530,5 +569,50 @@ public class DictionaryPractise
 
 
 }
+
+//hacker rank day 10 solution
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        
+        int counter = 0;
+        int maxCount = counter;
+        
+        while(n/2 != 0){
+            if(n%2 == 1){
+                counter++;
+            }
+            else{
+                if(counter > maxCount){
+                    maxCount = counter;
+                    counter = 0;
+                }
+            }
+            
+            n = n/2;
+        }
+        if(n%2 == 1){
+            counter++;
+            if(counter > maxCount){
+                maxCount = counter;
+            }
+           
+        }
+        
+        System.out.println(maxCount);
+        
+        
+    }
+}
+
 
 
