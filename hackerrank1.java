@@ -614,5 +614,37 @@ public class Solution {
     }
 }
 
+//Hacker rank day 10 solution 2
+
+public static int countConsecutiveOnes(int input)
+    {
+        String binary ="";
+        
+        while(input != 0)
+        {
+            binary = (input%2) + binary;
+            input = input/2;
+        }
+        int largest = 0;
+        int conSecutive =0;
+        for(int i =0; i < binary.length(); i++)
+        {
+            if(binary.charAt(i) == '1')
+            {
+                conSecutive+=1;
+            }
+            else if(binary.charAt(i) == '0')
+            {
+                if(conSecutive > largest)
+                    largest = conSecutive;
+                conSecutive = 0;
+            }
+        }
+        if(conSecutive > largest)
+                    largest = conSecutive;
+        
+        return largest;
+    }
+
 
 
