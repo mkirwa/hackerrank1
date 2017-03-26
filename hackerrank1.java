@@ -785,3 +785,53 @@ class Solution {
 }
 
 
+//Day 25 hackerrank
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. */
+        Scanner input = new Scanner(System.in);
+        int testcase = input.nextInt();        
+        for(int i=0; i<testcase ; i++){
+            int n = input.nextInt();
+            boolean prime = true;
+            
+            if(n==1){
+                System.out.println("Not prime");
+                continue;
+            }
+           
+         
+            for(int j=2; j<=Math.sqrt(n);j++){
+                if(n%j==0){
+                 prime = false;  
+                 break;
+
+                 }
+                
+                
+            }
+            if(prime){
+                System.out.println("Prime");
+            }
+            else{
+                System.out.println("Not prime");
+
+            }
+            
+
+        
+        }
+
+
+    }
+}
+
+
