@@ -7,7 +7,11 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 public class HackerrankTest{
-// Complete the solve function below.
+    private static double total_cost;
+    private static double meal_cost;
+    private static double tip_percent;
+    private static double tax_percent;
+    // Complete the solve function below.
     static void solve(double meal_cost, double tip_percent, double tax_percent, double total_cost) {
             meal_cost = meal_cost;
             tip_percent = meal_cost * 0.2;
@@ -19,15 +23,14 @@ public class HackerrankTest{
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        double meal_cost = scanner.nextDouble();
+        meal_cost = scanner.nextDouble();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        double tip_percent = scanner.nextInt();
+        tip_percent = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        double tax_percent = scanner.nextInt();
+        tax_percent = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");        
-        double total_cost = 0;
         
         solve(meal_cost,tip_percent,tax_percent, total_cost);
         
