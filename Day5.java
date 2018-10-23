@@ -14,8 +14,6 @@ public class Solution {
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
         int total = 1;
-        
-        
         for(int i=1; i<=10; i++){
             total = n * i;
             System.out.printf("%d x %d = %d\n",n,i,total);
