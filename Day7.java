@@ -31,8 +31,6 @@ public class Solution {
             System.out.print(arr[i]);
             System.out.print(" ");
         }
-        
-
         scanner.close();
     }
 }
