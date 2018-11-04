@@ -18,7 +18,7 @@ class Solution{
         while(in.hasNext()){
             String s = in.next();
             // Write code here
-            if(s.equalsIgnoreCase(name)){
+            if(s.equalsIgnoreCase(phonebook.keySet())){
                 System.out.println(phonebook.toString());   
             }else{
                 System.out.println("Not found");
