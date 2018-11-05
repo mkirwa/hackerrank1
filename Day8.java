@@ -18,8 +18,9 @@ class Solution{
             //given Given n names and phone numbers, assemble a phone book that maps friends'                 //names to their respective phone numbers. You will then be given an unknown number of             //names to query your phone book for. For each name queried, print the associated                 //entry from your phone book on a new line in the form name=phoneNumber; if an entry               //for name is not found, print Not found instead.
         }
         
-        int count = 0;
-            while(in.hasNext()){
+        int count = 1;
+            while(in.hasNext() && count<=Math.pow(10,4)){
+            count++;
             String s = in.next();
             int j=0;
             // Write code here
@@ -35,10 +36,7 @@ class Solution{
             }else{
                 System.out.println("Not found");
             }
-             count++;
-            if(count>Math.pow(10,5) && count <1){
-                break;
-            }
+
         }
             
         
