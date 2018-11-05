@@ -19,7 +19,7 @@ class Solution{
         }
         
         int count = 1;
-            while(in.hasNext() && count<=Math.pow(10,4)){
+            while(in.hasNext() && count<=Math.pow(10,5)){
             count++;
             String s = in.next();
             int j=0;
@@ -36,11 +36,8 @@ class Solution{
             }else{
                 System.out.println("Not found");
             }
-
-        }
             
-        
-
+        }
 
         in.close();
     }
