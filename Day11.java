@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
+public class Day11 {
 
 
 
@@ -26,8 +26,14 @@ public class Solution {
         }
         //all the items have been stored in arr items...
         //loop through arr item
-        //take the first three rows 
+        //Using element 0 in row 0 as reference 
+        //using take the first three rows 
         //take the first three columns 
+            //take all elements in the row 0
+            //take the element in the column 1 row 1
+            //take all elements in row 2
+            //add all these elements and store them in a variable max
+        //
 
         scanner.close();
     }
