@@ -6,7 +6,9 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Day11 {
+public class Solution {
+
+
 
     private static final Scanner scanner = new Scanner(System.in);
 
@@ -25,10 +27,18 @@ public class Day11 {
                 
                 int arrItem = Integer.parseInt(arrRowItems[j]);
                 arr[i][j] = arrItem;
-                if(j+count1<3+count1){
-                     total=total+j; 
-                }
-                         
+                if(i+1==j){
+                    //ignore element j=0 and element j=3;
+                    if(j==0 || j==j+2){
+                        total=total+0;
+                    }else{
+                        continue;
+                    }
+                }else{
+                    if(j+count1<3+count1){
+                         total=total+j; 
+                    }
+                }         
             }
             count1++;
             
