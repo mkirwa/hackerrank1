@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Day11 {
+public class Solution {
 
 
 
@@ -27,10 +27,10 @@ public class Day11 {
                 
                 int arrItem = Integer.parseInt(arrRowItems[j]);
                 arr[i][j] = arrItem;
-                do{
-                        total=total+j; 
-                }while(j+count1<=3)  
-                
+                if(j+count1<3+count1){
+                     total=total+j; 
+                }
+                         
             }
             count1++;
             
