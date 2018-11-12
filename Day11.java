@@ -55,7 +55,7 @@ public class Solution {
                 //take all elements in row 2
                 //add all these elements and store them in a variable max
             //
-
+        System.out.println(total);
         scanner.close();
     }
 }
