@@ -14,26 +14,39 @@ public class Day11 {
 
     public static void main(String[] args) {
         int[][] arr = new int[6][6];
-
+        int maximum = 0;
+        int total = 0;
+        int count1 = 0;
+        int count2 = 0;
         for (int i = 0; i < 6; i++) {
+            
             String[] arrRowItems = scanner.nextLine().split(" ");
             scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
+            
             for (int j = 0; j < 6; j++) {
+                
                 int arrItem = Integer.parseInt(arrRowItems[j]);
                 arr[i][j] = arrItem;
+                do{
+                        total=total+j; 
+                }while(j+count1<=3)  
+                
             }
+            count1++;
+            
         }
         //all the items have been stored in arr items...
         //loop through arr item
         //Using element 0 in row 0 as reference 
-        //using take the first three rows 
-        //take the first three columns 
-            //take all elements in the row 0
-            //take the element in the column 1 row 1
-            //take all elements in row 2
-            //add all these elements and store them in a variable max
-        //
+            //take the elements in the next two rows and add them 
+            //take the elements in the next two columns except for 
+            //element 1,0 and 1,2 add them to the elements fro
+            //take the first three columns 
+                //take all elements in the row 0
+                //take the element in the column 1 row 1
+                //take all elements in row 2
+                //add all these elements and store them in a variable max
+            //
 
         scanner.close();
     }
