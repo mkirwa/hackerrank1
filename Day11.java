@@ -35,9 +35,11 @@ public class Solution {
                         continue;
                     }
                 }else{
-                    if(j+count1<3+count1){
-                         total=total+j; 
+                    if(j<6){
+                        if(j+count1<3+count1)
+                            total=total+j; 
                     }
+                    
                 }         
             }
             count1++;
