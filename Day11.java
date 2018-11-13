@@ -9,6 +9,7 @@ import java.util.regex.*;
 public class Day11{
 
     private static final Scanner scanner = new Scanner(System.in);
+
     
     public static void main(String[] args) {
         int[][] arr = new int[6][6];
