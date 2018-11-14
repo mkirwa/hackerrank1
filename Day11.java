@@ -6,7 +6,9 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Day11{
+public class Solution {
+
+
 
     private static final Scanner scanner = new Scanner(System.in);
 
@@ -25,23 +27,39 @@ public class Day11{
                 
                 int arrItem = Integer.parseInt(arrRowItems[j]);
                 arr[i][j] = arrItem;
-                if(i+1==j){
-                    //ignore element j=0 and element j=3;
-                    if(j==0 || j==j+2){
-                        total=total+0;
-                    }else{
-                        continue;
-                    }
-                }else{
-                    if(j<6){
-                        if(j+count1<3+count1)
-                            total=total+j; 
-                    }
-                    
-                }         
-            }
-            count1++;
+                //if(count2==3){  
+                //}
+                          //if(total>maximum)
+                                //maximum=total;                         
+                            //total+=arr[i][j+count1];
+                            //count1++  
+                                
+                            //if j is greater or equal to 3
+                            //store the total in maximum
+                            //increment the count
+                            //add the next three elements starting
+                            //from the count to the 3rd element
+    
+                } 
             
+                //if(i==3){
+                    //total = maximum;
+                    //count1++;
+                //}
+            
+            }
+        
+        for(int i=0; i<6; i++){
+            
+            for(int j=0; j<6; j++){
+                count2++;
+                total+=arr[i][j];
+                
+            }
+        }
+            
+                System.out.println(total);
+                scanner.close();
         }
         //all the items have been stored in arr items...
         //loop through arr item
@@ -54,9 +72,6 @@ public class Day11{
                 //take the element in the column 1 row 1
                 //take all elements in row 2
                 //add all these elements and store them in a variable max
-            //
-        System.out.println(total);
-        scanner.close();
-    }
 }
+
 
