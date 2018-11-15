@@ -9,6 +9,7 @@ import java.util.regex.*;
 public class Solution {
 
 
+
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -55,7 +56,7 @@ public class Solution {
         
         for(int i=0; i<6; i++){
             
-            for(int j=0; j<6; j++){
+            for(int j=0; j<count2; j++){
                 total+=arr[i][j];
                 if(j==count2){
                     if(total>maximum)
