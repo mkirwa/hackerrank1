@@ -15,6 +15,7 @@ public class Solution {
     public static void main(String[] args) {
         int[][] arr = new int[6][6];
         int maximum = 0;
+        int reseti = 0;
         int total = 0;
         int count1 = 0;
         int count2 = 2;
@@ -49,18 +50,23 @@ public class Solution {
             
             }
         
+        //find the highest hour glass in the first three rows
+        //compare that hour glass with the second row and so forth 
+        //and so forth
+        
         for(int i=0; i<6; i++){
             
             for(int j=0; j<6; j++){
-                count2++;
                 total+=arr[i][j];
-                if(j==2){
+                if(j==count2){
                     if(total>maximum)
                         maximum=total;
+                        reseti=j-2;
+                    total=0;
                     j=j-1;
                     total+=arr[i][j];
-                    
-                    total=0;        
+                    count2++;   
+                            
                 }
                     
             }
