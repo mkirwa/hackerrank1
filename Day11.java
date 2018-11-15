@@ -17,7 +17,7 @@ public class Solution {
         int maximum = 0;
         int total = 0;
         int count1 = 0;
-        int count2 = 0;
+        int count2 = 2;
         for (int i = 0; i < 6; i++) {
             
             String[] arrRowItems = scanner.nextLine().split(" ");
@@ -54,7 +54,15 @@ public class Solution {
             for(int j=0; j<6; j++){
                 count2++;
                 total+=arr[i][j];
-                
+                if(j==2){
+                    if(total>maximum)
+                        maximum=total;
+                    j=j-1;
+                    total+=arr[i][j];
+                    
+                    total=0;        
+                }
+                    
             }
         }
             
