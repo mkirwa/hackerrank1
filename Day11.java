@@ -6,7 +6,9 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Day11{
+public class Solution {
+
+
 
     private static final Scanner scanner = new Scanner(System.in);
 
@@ -15,8 +17,10 @@ public class Day11{
         int maximum = 0;
         int reseti = 0;
         int total = 0;
+        int count = 2;
         int count1 = 0;
         int count2 = 2;
+        int counter = 0;
         for (int i = 0; i < 6; i++) {
             
             String[] arrRowItems = scanner.nextLine().split(" ");
@@ -51,26 +55,37 @@ public class Day11{
         //find the highest hour glass in the first three rows
         //compare that hour glass with the second row and so forth 
         //and so forth
-        
-        for(int i=0; i<6; i++){
+        do{
             
-            for(int j=0; j<count2; j++){
-                total+=arr[i][j];
-                if(j==count2){
-                    if(total>maximum)
-                        maximum=total;
-                        reseti=j-2;
-                    total=0;
-                    j=j-1;
-                    total+=arr[i][j];
-                    count2++;   
-                            
-                }
+            for(int i= counter; i<=count; i++){
+            
+            for(int j= counter; j<=count; j++){
                     
+                    if(i==counter){
+                        if(j==1){
+                            total+=arr[i][j];
+                        if(total>maximum)
+                            maximum=total; 
+                        }
+                                 
+                    }else
+                    {
+                        total+=arr[i][j];
+                        if(total>maximum)
+                            maximum=total;   
+                    }
+                              
+                
             }
+                
         }
+            total=0;
+            count++;
+            counter++;
+        }while(count!=6);
+        
             
-                System.out.println(total);
+                System.out.println(maximum);
                 scanner.close();
         }
         //all the items have been stored in arr items...
@@ -85,5 +100,4 @@ public class Day11{
                 //take all elements in row 2
                 //add all these elements and store them in a variable max
 }
-
 
