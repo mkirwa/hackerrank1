@@ -30,9 +30,7 @@ public class Solution {
                 arr[i][j] = arrItem;
                 
     
-                } 
-            
-                
+                }                
             
             }
         
