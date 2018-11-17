@@ -53,10 +53,8 @@ public class Solution {
         count++;
         counter++; 
             
-        }while(count!=6);
-        
-            
-                System.out.println(maximum);
+        }while(count!=6);   
+                  System.out.println(maximum);
                 scanner.close();
         }
        
