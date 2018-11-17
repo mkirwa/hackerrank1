@@ -15,7 +15,6 @@ public class Solution {
         int maximum = 0;
         int total = 0;
         int count = 2;
-        int count1 = 0;
         int count2 = 2;
         int counter = 0;
         for (int i = 0; i < 6; i++) {
