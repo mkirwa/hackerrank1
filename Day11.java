@@ -13,7 +13,6 @@ public class Solution {
     public static void main(String[] args) {
         int[][] arr = new int[6][6];
         int maximum = 0;
-        int reseti = 0;
         int total = 0;
         int count = 2;
         int count1 = 0;
