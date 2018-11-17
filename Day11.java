@@ -8,8 +8,6 @@ import java.util.regex.*;
 
 public class Solution {
 
-
-
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -30,74 +28,41 @@ public class Solution {
                 
                 int arrItem = Integer.parseInt(arrRowItems[j]);
                 arr[i][j] = arrItem;
-                //if(count2==3){  
-                //}
-                          //if(total>maximum)
-                                //maximum=total;                         
-                            //total+=arr[i][j+count1];
-                            //count1++  
-                                
-                            //if j is greater or equal to 3
-                            //store the total in maximum
-                            //increment the count
-                            //add the next three elements starting
-                            //from the count to the 3rd element
+                
     
                 } 
             
-                //if(i==3){
-                    //total = maximum;
-                    //count1++;
-                //}
+                
             
             }
         
-        //find the highest hour glass in the first three rows
-        //compare that hour glass with the second row and so forth 
-        //and so forth
         do{
-            
             for(int i= counter; i<=count; i++){
             
             for(int j= counter; j<=count; j++){
-                    
-                    if(i==counter){
-                        if(j==1){
+                        if(i==counter+1){
+                            if(j==counter+1)
+                                total+=arr[i][j]; 
+                        }else{
+
                             total+=arr[i][j];
-                        if(total>maximum)
-                            maximum=total; 
+                 
                         }
-                                 
-                    }else
-                    {
-                        total+=arr[i][j];
-                        if(total>maximum)
-                            maximum=total;   
-                    }
-                              
-                
-            }
-                
+
+            }       
         }
-            total=0;
-            count++;
-            counter++;
+        if(total>maximum)
+            maximum=total;
+        total=0;
+        count++;
+        counter++; 
+            
         }while(count!=6);
         
             
                 System.out.println(maximum);
                 scanner.close();
         }
-        //all the items have been stored in arr items...
-        //loop through arr item
-        //Using element 0 in row 0 as reference 
-            //take the elements in the next two rows and add them 
-            //take the elements in the next two columns except for 
-            //element 1,0 and 1,2 add them to the elements fro
-            //take the first three columns 
-                //take all elements in the row 0
-                //take the element in the column 1 row 1
-                //take all elements in row 2
-                //add all these elements and store them in a variable max
+       
 }
 
